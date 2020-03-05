@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FORMS</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="assets/icons.css" />
+  <link rel="stylesheet" href="assets/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link href="assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+  <link href="assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+	<div class="container">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="alert alert-info" style="border-radius: 5px 5px 0px 0px;">HTML FORMS</h5>
+				<form name="regForm" id="form1" method="POST" action="" class="form">
+					<fieldset>
+						<legend>Personal Details</legend>
+						<input type="text" id="fname" class="form-control material" placeholder="First Name">
+						
+						<input type="text" id="lname" class="form-control material" placeholder="Last Name">
+
+
+						<select id="country" class="form-control material">
+					      <option value="" disabled selected>Choose your country</option>
+					      <option value="1">Uganda</option>
+					      <option value="2">Kenya</option>
+					      <option value="3">Rwanda</option>
+					    </select>
+					    <label for="country">Country</label>
+
+
+						<input type="text" id="addr" class="form-control material" placeholder="Address">
+
+						<input type="text" id="city" class="form-control material" placeholder="City">
+
+						<input type="number" id="dob" class="form-control material" placeholder="Your Age" maxlength="99" max="100">
+
+						<p>
+					      <label>
+					        <input name="group1" class="radio" type="radio" />
+					        <span>People Power</span>
+					      </label>
+					      <label>
+					        <input name="group1" type="radio" />
+					        <span>NRM</span>
+					      </label>
+					      <label>
+					        <input name="group1" type="radio" />
+					        <span>FDC</span>
+					      </label>
+					      <label>
+					        <input name="group1" type="radio" />
+					        <span>DP</span>
+					      </label><br>
+					    </p>
+
+					    <textarea name="" id="msg" class="form-control material materialize-textarea" translate="en" placeholder="Say Something..."></textarea>
+
+					    <br>
+					    <input type="button" value="Reset" class="btn pulse btn-danger" onclick="form1.reset()">
+
+					    <input type="submit" value="Send Data" class="btn pulse green-bg btn-primary pull-right">
+
+					</fieldset>		
+				</form>
+
+			</div>
+			
+		</div>
+
+		
+	</div>
+	
+
+
+</body>
+</html>
